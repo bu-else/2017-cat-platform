@@ -1,111 +1,0 @@
-1.Brief Description : A user self-administers an assessment to track their own progress. Assess individual progress over time: questions will measure individual's’ mobility and show current results compared to previous results.  
-
-
-
-2.	Actors : 
-
-	a. Primary: User/Patient 
-
-	b. Secondary: Administrator/Clinician  
-
-
-
-3.	Flow of Events: 
-
-	a. Basic Flow 
-
-		  i. Receive email from clinician with a link  
-
-		  ii. User follows link  
-
-		  iii. User agrees to terms of use/end-user license agreement  
-
-		  iv. User completes registration process  
-
-		  v. User verifies email address/confirmation email  
-
-		  vi. User lands on a home page  
-
-		  vii. [6] User can begin assessment   
-
-		      1. User answers each multiple question.  			
-
-          2. User sees progress bar.  
-
-		1. User saves current progress (or progress is saved 	automatically by server) 
-
-			  a. User logs out  
-
-			  b. [5] Later, attempts to log back in [1][2] 
-
-				    i. User sees option to resume assessment or start new assessment (if applicable)   
-
-			  c. User answers questions 
-
-			  d. User presses submit button 
-
-			  e. User sees a summary of the results  
-
-			  f. User looks at one of the past results (e.g., by date) 
-
-				    i. List of possible dates 
-
-				    ii. Each date is clickable 
-
-			  g. User looks at big chart with all assessments: 
-
-				    i. Filter by date 
-
-				    ii. Filter by type of assessment  
-
-			  h. Go to [6] 
-
-
-
-	b. Alternative Flows 
-
-		  a. [1] User logs in  
-
-			    i. User goes to account setting 
-
-	     		ii. User chooses to change password 
-
-			    iii. [3] User receives email with password update link 
-
-			    iv. User clicks on link 
-
-			    v. Page prompts user for new password 
-
-			    vi. User lands on home page  
-
-		  b. [2] User cannot log in (e.g., forgotten password) 
-
-			    i. User clicks to reset password 
-
-			    ii. Go to [3] 
-
-		  c. [4] User closes the browser tab  
-
-			    i. User opens the CAT Website: go to [5]
-
-		  d. User exits test and leaves test uncompleted  
-
-			    i. User goes to Pending Tests  
-
-			    ii. User deletes desired test 
-
-			    iii. Go to [6] 
-
-		  e. Start at 1.  
-
-			    i. User desires to change/add clinician 
-
-			    ii. Go to account settings  
-
-			    iii. Press add clinician  
-
-			    iv. Enter clinician code  
-
-			    v. Submit 
-
-			    vi. Go to [6]
