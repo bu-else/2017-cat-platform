@@ -88,6 +88,7 @@ class Navbar extends React.Component {
                             <li className={this.isPathActive('/contact')}>
                                 <Link to="/contact">Contact</Link>
                             </li>
+                            {/* TODO: These should should only be active if the user is signed in */}
                             <li className={this.isPathActive('/assessments')}>
                                 <Link to="/assessments">Start New</Link>
                             </li>
