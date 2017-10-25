@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Aqua
 
 A website and user system starter.
@@ -213,3 +214,7 @@ MIT
 ## Don't forget
 
 What you build with Aqua is more important than Aqua.
+=======
+# 2017-cat-platform
+Web-based computerized adaptive testing (CAT) platform.
+>>>>>>> upstream/master
