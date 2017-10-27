@@ -1,6 +1,5 @@
 'use strict';
 const About = require('./about/index.jsx');
-const Assess = require('./assessments/index.jsx')
 const Contact = require('./contact/index.jsx');
 const Footer = require('./footer.jsx');
 const Home = require('./home/index.jsx');
@@ -10,10 +9,8 @@ const LoginLogout = require('./login/logout/index.jsx');
 const LoginReset = require('./login/reset/index.jsx');
 const Navbar = require('./navbar.jsx');
 const NotFound = require('./not-found.jsx');
-const Pending = require('./pending/index.jsx');
 const React = require('react');
 const ReactRouter = require('react-router-dom');
-const Results = require('./results/index.jsx');
 const RouteRedirect = require('../../components/route-redirect.jsx');
 const Signup = require('./signup/index.jsx');
 
@@ -36,10 +33,6 @@ const AppUniversal = function () {
                 <Route path="/login/reset/:email/:key" component={LoginReset} />
                 <Route path="/login/logout" exact component={LoginLogout} />
                 <Route path="/signup" exact component={Signup} />
-                <Route path="/assessments" exact component={Assess} />
-                <Route path="/pending" exact component={Pending} />
-                <Route path="/results" exact component={Results} />
-
                 <RouteRedirect from="/moved" to="/" code={301} />
 
                 <Route component={NotFound} />
