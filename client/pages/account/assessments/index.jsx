@@ -1,14 +1,12 @@
 'use strict';
 const React = require('react');
 const ReactHelmet = require('react-helmet');
-const Button = require('react-bootstrap/lib/Button');
+//const Button = require('react-bootstrap/lib/Button');
 const ButtonToolbar = require('react-bootstrap/lib/ButtonToolbar');
-const ButtonGroup = require('react-bootstrap/lib/ButtonGroup');
+//const ButtonGroup = require('react-bootstrap/lib/ButtonGroup');
 const DropdownButton = require('react-bootstrap/lib/DropdownButton');
 const MenuItem = require('react-bootstrap/lib/MenuItem');
-
-
-
+const listforms = require('listforms');
 const Helmet = ReactHelmet.Helmet;
 
 
@@ -18,18 +16,10 @@ class AssessPage extends React.Component {
     render() {
         const buttonsInstance = (
             <ButtonToolbar>
-                {/* Standard button */}
-                <Button>Default</Button>
-
-                <ButtonGroup>
-                    <Button>1</Button>
-                    <Button>2</Button>
-                    <DropdownButton title="Dropdown" id="bg-nested-dropdown">
-                        <MenuItem eventKey="1">Dropdown link</MenuItem>
-                        <MenuItem eventKey="2">Dropdown link</MenuItem>
-                        {/*TODO: link to API call for displaying list forms*/}
-                    </DropdownButton>
-                </ButtonGroup>
+                <DropdownButton title="Dropdown" id="bg-nested-dropdown">
+                    <MenuItem eventKey="1">Dr</MenuItem>
+                    <MenuItem eventKey="2">Dropdown link</MenuItem>
+                </DropdownButton>
             </ButtonToolbar>
 
         );
@@ -51,8 +41,9 @@ class AssessPage extends React.Component {
                                 <li>The 'Display Form' button will preview an instrument (display all items in the instrument).</li>
                             </div>
                         <div className="buttonsInstance">{buttonsInstance}</div>
-
+                        <listforms />
                         </div>
+
                         <hr />
                     </div>
             </section>
