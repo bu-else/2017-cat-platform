@@ -6,8 +6,8 @@ const ButtonToolbar = require('react-bootstrap/lib/ButtonToolbar');
 //const ButtonGroup = require('react-bootstrap/lib/ButtonGroup');
 const DropdownButton = require('react-bootstrap/lib/DropdownButton');
 const MenuItem = require('react-bootstrap/lib/MenuItem');
-const listforms = require('listforms');
 const Helmet = ReactHelmet.Helmet;
+const TestAPI = require('../testapi');
 
 
 class AssessPage extends React.Component {
@@ -41,7 +41,9 @@ class AssessPage extends React.Component {
                                 <li>The 'Display Form' button will preview an instrument (display all items in the instrument).</li>
                             </div>
                         <div className="buttonsInstance">{buttonsInstance}</div>
-                        <listforms />
+                        {/*<ListForms />*/}
+                        <TestAPI/>
+
                         </div>
 
                         <hr />
