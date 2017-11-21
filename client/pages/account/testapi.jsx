@@ -1,6 +1,4 @@
 // require the module
-const Frisbee = require('frisbee');
-const es6promise = require('es6-promise');
 const React = require('react');
 const __DEV__ = 'https://www.assessmentcenter.net/ac_api/2014-01/';
 const USER_ID = "3F82B476-30F1-4419-8FA5-253EC937483D";
@@ -50,38 +48,12 @@ componentDidMount() {
             .catch(function(error){
                 console.error(error);
         })
-       //.then(function(response) {
-//            if (response.ok) {
-//                return response.blob();
-//            }
-//            throw new Error('Network response was not ok');
-//        }).then(function(myBlob) {
-//
-//            }
-//        ).catch(function(error) {
-//         console.log('there has been a problem with fetch operation: '+error.message);
-//
-// });
-//         .then(results => {
-//             return results.json();
-//         }).then(data => {
-//             let pictures = data.results.map((pic) => {
-//                 return (
-//                     <div key={pic.results}>
-//                         <img src = {pic.picture.medium}/>
-//                     </div>
-//                 )
-//                 })
-//             this.setState({pictures: pictures});
-//             console.log("state", this.state.pictures);
-//             })
 
 }
     render () {
         return (
             <div className ="container1">
                 <div className="container2">
-                    {/*{this.state.pictures}*/}
                 </div>
             </div>
         )
