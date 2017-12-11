@@ -8,12 +8,19 @@ const DropdownButton = require('react-bootstrap/lib/DropdownButton');
 const MenuItem = require('react-bootstrap/lib/MenuItem');
 const Helmet = ReactHelmet.Helmet;
 const TestAPI = require('../testapi');
-
+const url = 'http://128.31.24.189:8001/api/survey/start/';
+const fetch = require('fetch-api');
+const axios = require('axios');
 
 class AssessPage extends React.Component {
 
+    constructor(props) {
+        super(props);
+
+    }
 
     render() {
+
         const buttonsInstance = (
             <ButtonToolbar>
                 <DropdownButton title="Dropdown" id="bg-nested-dropdown">
@@ -24,6 +31,8 @@ class AssessPage extends React.Component {
 
         );
 
+
+
         return (
             <section className="section-about container">
                 <Helmet>
@@ -33,7 +42,7 @@ class AssessPage extends React.Component {
                     <div className="col-sm-6">
                         <h1 className="page-header">Take an assessment</h1>
                             <div>
-                                <h4> Instructions</h4>
+                                <h4>Instructions</h4>
                                 <li>Select List Forms to display available instruments.</li>
                                 <li>Select an instrument and then click the 'Order Form' button to order the instrument.</li>
                                 <li>Click the 'Administer Form' button to start the assessment.</li>
@@ -41,10 +50,11 @@ class AssessPage extends React.Component {
                                 <li>The 'Display Form' button will preview an instrument (display all items in the instrument).</li>
                             </div>
                         <div className="buttonsInstance">{buttonsInstance}</div>
-                        {/*<ListForms />*/}
+
+                         {/*TestAPI component is a child of Index component*/}
                         <TestAPI/>
 
-                        </div>
+                    </div>
 
                         <hr />
                     </div>
