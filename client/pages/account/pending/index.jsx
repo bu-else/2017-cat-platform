@@ -6,7 +6,7 @@ const ReactHelmet = require('react-helmet');
 const Helmet = ReactHelmet.Helmet;
 
 
-class AssessPage extends React.Component {
+class PendingPage extends React.Component {
     render() {
 
         return (
@@ -75,4 +75,4 @@ class AssessPage extends React.Component {
 }
 
 
-module.exports = AssessPage;
+module.exports = PendingPage;

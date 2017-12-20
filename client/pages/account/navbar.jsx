@@ -75,10 +75,10 @@ class Navbar extends React.Component {
                             <li className={this.classForPath('/assessments')}>
                                 <Link to="/assessments">Start New</Link>
                             </li>
-                            <li className={this.classForPath('/pending')}>
+                            <li className={this.classForPath('/account/pending')}>
                                 <Link to="/pending">Pending Tests</Link>
                             </li>
-                            <li className={this.classForPath('/results')}>
+                            <li className={this.classForPath('/account/results')}>
                                 <Link to="/results">Test Results</Link>
                             </li>
                         </ul>
