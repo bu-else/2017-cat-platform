@@ -5,9 +5,9 @@ A website and user system starter.
 
 [![Build Status](https://travis-ci.org/jedireza/aqua.svg?branch=master)](https://travis-ci.org/jedireza/aqua)
 
-##How To: 
+## How To: 
 
-#CAT Platform
+# CAT Platform
 
 1. Clone git repo, master branch
 2. Run a mongod instance
@@ -20,7 +20,7 @@ A website and user system starter.
 8. If you log out , and sign back in, click email to reset password
 9. Update your information or reset your password directly when signed in. 
 
-#Based on the Aqua Framework
+# Based on the Aqua Framework
 *description below*
 
 
