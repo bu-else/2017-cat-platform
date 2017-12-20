@@ -1,6 +1,8 @@
 ### Welcome Aboard
 
-Thanks for signing up. As requested, your account has been created.
+Thanks for signing up. 
+
+As requested, your account has been created.
 Here are your login credentials:
 
 | Details   |              |
@@ -10,4 +12,4 @@ Here are your login credentials:
 
 Love,
 
-The Plot Device
+The CAT Platform

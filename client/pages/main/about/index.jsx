@@ -20,7 +20,7 @@ class AboutPage extends React.Component {
                         <div className="media">
                             <div className="pull-left">
                                 <div className="media-object">
-                                    <i className="fa fa-camera-retro fa-4x"></i>
+                                    <div className="fa fa-camera-retro fa-4x"></div>
                                 </div>
                             </div>
                             <div className="media-body">
@@ -35,9 +35,9 @@ class AboutPage extends React.Component {
                         </div>
                         <hr />
                         {/*<div className="media">*/}
-                            {/*<div className="pull-left">*/}
-                                {/*<div className="media-object">*/}
-                                    {/*<i className="fa fa-camera-retro fa-4x"></i>*/}
+                        {/*<div className="pull-left">*/}
+                        {/*<div className="media-object">*/}
+                        {/*<i className="fa fa-camera-retro fa-4x"></i>*/}
                                 {/*</div>*/}
                             {/*</div>*/}
                             {/*<div className="media-body">*/}
@@ -75,7 +75,7 @@ class AboutPage extends React.Component {
                         <p className="lead">
                             The first name in entertainment.
                         </p>
-                        <i className="fa fa-volume-up bamf"></i>
+                        <div className="fa fa-volume-up bamf"></div>
                     </div>
                 </div>
             </section>

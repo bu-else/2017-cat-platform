@@ -52,18 +52,18 @@ const config = {
         port: 465,
         secure: true,
         auth: {
-            user: 'jedireza@gmail.com',
-            pass: process.env.SMTP_PASSWORD
+            user: 'thecatplatform@gmail.com',
+            pass: 'cs491else'
         }
     },
     system: {
         fromAddress: {
-            name: 'Aqua',
-            address: 'jedireza@gmail.com'
+            name: 'The CAT Platform',
+            address: 'thecatplatform@gmail.com'
         },
         toAddress: {
-            name: 'Aqua',
-            address: 'jedireza@gmail.com'
+            name: 'The Cat Platform',
+            address: 'thecatplatform@gmail.com'
         }
     }
 };

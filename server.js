@@ -10,6 +10,6 @@ Composer((err, server) => {
 
     server.start(() => {
 
-        console.log('Started the plot device on port ' + server.info.port);
+        console.log('Started The Cat Platform on port ' + server.info.port);
     });
 });
