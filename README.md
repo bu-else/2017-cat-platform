@@ -5,6 +5,26 @@ A website and user system starter.
 
 [![Build Status](https://travis-ci.org/jedireza/aqua.svg?branch=master)](https://travis-ci.org/jedireza/aqua)
 
+##How To: 
+
+#CAT Platform
+
+1. Clone git repo, master branch
+2. Run a mongod instance
+3. ’npm start’ to start device on local host + port number 
+4. Enable [cross-origin resource sharing](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?utm_source=gmail)
+5. Sign up by creating an account 
+6. You will receive an email from our server 
+7. Click ’Start New’ to begin assessment 
+    1. Main code in *client/pages/account/assessments/index.jsx*, uses API calls from *client/pages/account/testapi.jsx*
+8. If you log out , and sign back in, click email to reset password
+9. Update your information or reset your password directly when signed in. 
+
+#Based on the Aqua Framework
+*description below*
+
+
+
 
 ## Features
 

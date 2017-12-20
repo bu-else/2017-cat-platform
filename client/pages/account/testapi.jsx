@@ -10,10 +10,15 @@ class TestAPI extends React.Component {
         super(props);
         this.state = {
             questions: [],
-            responses: []
+            responses: [],
+            selectedOption: [],
+            score: 0
           //  surveyID: '',
           //  userID: ''
         };
+        //React components using ES6 classes no longer autobind this to non React methods.
+        this.handleFormReset = this.handleFormReset.bind(this);
+        this.handleFormSubmit = this.handleFormSubmit.bind(this);
     }
 
     componentDidMount() {
@@ -28,9 +33,12 @@ class TestAPI extends React.Component {
 
                 _.map(this.state.questions, question => {
                     this.setState({responses: question.responseOptions });
-                })
+                });
 
-               // console.log(this.state.responses);
+                _.map(this.state.responses, response => {
+                    this.setState({selectedOption: response.value});
+                });
+
 
             })
             .catch(function(error) {
@@ -48,18 +56,49 @@ class TestAPI extends React.Component {
 
     }
 
-
     render () {
 
         return (
             <div className ="container1">
                 <div className="container2">
-                    {this.renderQuestions()}
+                    <form onSubmit={this.handleFormSubmit} onReset={this.handleFormReset}>
+                        {this.renderQuestions()}
+                        <button className="btn btn-default" type="submit">Submit Responses</button>
+                        <button className="btn btn-default" type="reset">Reset Responses</button>
+                    </form>
+
+                    {/*{this.renderRadioButtons()}*/}
+
                 </div>
             </div>
         );
 
     }
+
+     // handleOptionChange(changeEvent) {
+    //     this.setState({
+    //         selectedOption: changeEvent.target.value
+    //     });
+    // }
+
+    handleFormSubmit(formSubmitEvent) {
+        formSubmitEvent.preventDefault();
+        console.log('You have selected to submit');
+        this.setState({
+            score: 100
+        });
+        console.log(this.state.score);
+    }
+
+    handleFormReset(formSubmitEvent) {
+        formSubmitEvent.preventDefault();
+        console.log('You have selected to reset');
+        this.setState({
+            selectedOption: []
+        });
+        console.log(this.state.selectedOption);
+    }
+
 
     renderQuestions() {
 
@@ -69,43 +108,36 @@ class TestAPI extends React.Component {
 
         return _.map(this.state.questions, question => {
 
+            var question_text= question.questionText;
+
+            //var question_id = question.tabindex;
+
             return ( _.map(question.responseOptions, response => {
 
-                var text = response.displayText + " ";
+                var response_text = response.displayText;
+                var response_id = response.id;
 
                 // currently returning the question multiple times
                 // how do i get it to show the question once, and then a list of responses for every question?
                 return (
-                    <ul key ={response.id}>
-                        {question.questionText}
-                        {text}
+
+                    <ul><label>{question_text}</label>
+                        <ul key ={response_id}></ul>
+
+                      {/*//  <input type='radio' value ="response option">{response_text}</input>*/}
+                        <ul>
+                            <button type = "button"ç>{response_text}</button>
+                        </ul>
                     </ul>
+
                 );
             }));
-        });
+        }
+
+        );
 
 
     }
-
-
-
-
-    // renderResponseOptions() {
-    //
-    //     console.log(this.state.responses);
-    //     return _.map(this.state.responses, option => {
-    //         return(
-    //             <li className="list-group-item" key={option.id}>
-    //                 <ul>
-    //                     {option.displayText}
-    //                 </ul>
-    //             </li>
-    //         );
-    //     });
-    // }
-
-
-
 }
 
 

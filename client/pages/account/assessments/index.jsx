@@ -49,7 +49,7 @@ class AssessPage extends React.Component {
                                 <li>Refresh page to try another instrument.</li>
                                 <li>The 'Display Form' button will preview an instrument (display all items in the instrument).</li>
                             </div>
-                        <div className="buttonsInstance">{buttonsInstance}</div>
+                        {/*<div className="buttonsInstance">{buttonsInstance}</div>*/}
 
                          {/*TestAPI component is a child of Index component*/}
                         <TestAPI/>
