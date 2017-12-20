@@ -1,5 +1,8 @@
 'use strict';
 const About = require('./about/index.jsx');
+
+const Assess = require('./assessments/index.jsx');
+
 const Contact = require('./contact/index.jsx');
 const Footer = require('./footer.jsx');
 const Home = require('./home/index.jsx');
